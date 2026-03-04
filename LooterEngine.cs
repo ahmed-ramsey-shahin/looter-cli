@@ -34,7 +34,7 @@ public class LooterEngine
         Console.WriteLine("All loot secured.");
     }
 
-    public async Task DownloadFileAsync(string url)
+    private async Task DownloadFileAsync(string url)
     {
         Uri uri = new(url);
         string filename = Path.GetFileName(uri.LocalPath);
